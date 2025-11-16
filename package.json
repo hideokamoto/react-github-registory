@@ -34,6 +34,12 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "vitest related --run"
+    ]
+  },
   "name": "@hideokamoto/github-registory",
   "author": "Hidetaka Okamoto",
   "publishConfig": {
@@ -48,19 +54,20 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/ui": "^2.1.8",
+    "@vitest/ui": "^3.0.6",
     "eslint": "^9.15.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "jsdom": "^25.0.1",
+    "lint-staged": "^15.2.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.1",
     "vite-plugin-dts": "^4.3.0",
-    "vitest": "^2.1.8"
+    "vitest": "^3.0.6"
   }
 }
