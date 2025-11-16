@@ -13,9 +13,10 @@ export default defineConfig({
     }),
   ],
   build: {
+    sourcemap: true,
     lib: {
       entry: resolve(__dirname, 'src/index.tsx'),
-      name: 'GithubRegistory',
+      name: 'GithubRegistry',
       formats: ['es', 'cjs'],
       fileName: (format) => `index.${format === 'es' ? 'mjs' : 'js'}`,
     },

@@ -13,10 +13,10 @@
     "node": ">=18"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite example",
     "build": "tsc && vite build",
-    "build:lib": "tsc && vite build --config vite.config.ts",
-    "preview": "vite preview",
+    "build:example": "vite build example",
+    "preview": "vite preview example",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "type-check": "tsc --noEmit"
   },
